@@ -271,5 +271,19 @@ tr:hover {
     }
 }
 
+.botones-usuario {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #1c1c1a;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 
