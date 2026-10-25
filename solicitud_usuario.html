@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de solicitudes</title>
+    <link rel="stylesheet" href="./CSS/Styles.css">
+</head>
+
+<body>
+
+<main class="dos-columnas">
+
+  <form class="formulario" id="formSolicitud" action="guardar_solicitud.php" method="POST">
+<h1>Detalle de Solicitud</h1>
+        <input type="text" name="Nombre" placeholder="Nombre" aria-label="Nombre" required>
+        <input type="email" name="Correo" placeholder="Correo" aria-label="Correo" required>
+        <input type="equipo" name="Equipo" placeholder="Equipo" aria-label="Descripcion" required>
+        <input type="text" name="Descripcion" placeholder="Descripcion" aria-label="Descripcion" required>
+        <input type="text" name="Comentario" placeholder="Agregar comentario" aria-label="comentario">
+        <label for="estado">Estado:</label>
+        <label name="estado" id="estado"></label>
+            <select id="estado" disabled>
+            <option>Pendiente</option>
+        </select>
+    <button type="submit">Registrar solicitud</button>
+  </form>
+</body>
+
