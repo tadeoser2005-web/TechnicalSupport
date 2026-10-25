@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Solicitudes</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<nav class="menu">
+    <a href="admin_inicio.php">Inicio</a>
+    <a href="admin_equipos.html" >Administrar equipos</a>
+    <a href="admin_tecnico.html" >Administrar Personal</a>
+    <a href="solicitudes.html" class="activo">Solicitudes</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
+
+<main class="dos-columnas">
+
+    <form class="formulario" action="#" method="post">
+        <h1>Detalle de Solicitud</h1>
+        <input type="text" name="Nombre" placeholder="Nombre" aria-label="Nombre" required>
+        <input type="email" name="Correo" placeholder="Correo" aria-label="Correo" required>
+        <input type="text" name="Descripcion" placeholder="Descripcion" aria-label="Descripcion" required>
+        <input type="text" name="Comentario" placeholder="Agregar comentario" aria-label="comentario">
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado" class="estados">
+            <option value="pendiente" >Pendiente</option>
+            <option value="en_progreso" >En Progreso</option>
+            <option value="resuelto" >Resuelto</option>
+        </select>
+        <button type="submit" onclick="window.location.href='solicitudes.html'">Actualizar solicitud</button>
+    </form>
+
+    <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>
+</main>
+
+
+</body>
+</html>

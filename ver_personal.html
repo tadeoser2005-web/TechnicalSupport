@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Equipos Registrados</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<body>
+<nav class="menu">
+    <a href="admin_inicio.php">Inicio</a>
+    <a href="admin_equipos.html" >Administrar equipos</a>
+    <a href="admin_tecnico.html" class="activo">Administrar Personal</a>
+    <a href="solicitudes.html">Solicitudes</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
+
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Filas de datos de equipos -->
+        <tr>
+            <td>Tadeo</td>
+            <td>Servin</td>
+            <td>tadeo@gmail.com</td>
+            <td class='opciones'>
+                <a href='editar_personal.html' title='Editar'>✏️</a>
+                <a  href='admin_tecnico.html' title='Borrar' onclick="return confirm('Estás seguro de que quieres borrar este personal?')">🗑️</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Glenda</td>
+            <td>Barrera</td>
+            <td>glen@gmail.com</td>
+            <td class='opciones'>
+                <a href='editar_personal.html' title='Editar'>✏️</a>
+                <a  href='admin_tecnico.html' title='Borrar' onclick="return confirm('Estás seguro de que quieres borrar este personal?')">🗑️</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Registrar técnico</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<nav class="menu">
+    <a href="admin_inicio.php">Inicio</a>
+    <a href="admin_equipos.html">Administrar equipos</a>
+    <a href="admin_tecnico.html" class="activo">Administrar Personal</a>
+    <a href="solicitudes.html">Solicitudes</a>
+    <a href="index.html">Cerrar sesión</a>
+</nav>
+<main class="dos-columnas">
+    <div class="imagen">  <img src="Assets/cardenalIzq.png" alt="Imagen 2" width="500" height="580"></div>
+    <form class="formulario" action="#" method="post">
+        <h1>Registrar Técnico</h1>
+        <input type="text" name="nombre" placeholder="Nombre" aria-label="Nombre" required>
+        <input type="text" name="apellido" placeholder="Apellido" aria-label="Apellido" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+        <button type="submit">Registrar</button>
+        <button type="button" onclick="window.location.href='ver_personal.html'">Ver Personal</button>
+    </form>
+</main>
+</body>
+</html>

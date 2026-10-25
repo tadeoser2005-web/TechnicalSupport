@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Equipos Registrados</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
 <nav class="menu">
     <a href="admin_inicio.php">Inicio</a>
     <a href="admin_equipos.html" class="activo">Administrar equipos</a>
-    <a href="administrar_personal.html">Administrar Personal</a>
+    <a href="admin_tecnico.html">Administrar Personal</a>
+    <a href="solicitudes.html">Solicitudes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de datos de equipos -->
+            <tr>
+                <td>Marca 1</td>
+                <td>Modelo 1</td>
+                <td class='opciones'>
+                    <a href='editar_equipos.html' title='Editar'>✏️</a>
+                    <a  href='admin_equipos.html' title='Borrar' onclick="return confirm('Estás seguro de que quieres borrar este equipo?')">🗑️</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Marca 2</td>
+                <td>Modelo 2</td>
+                <td class='opciones'>
+                    <a href='editar_equipos.html' title='Editar'>✏️</a>
+                    <a href='admin_equipos.html' title='Borrar' onclick="return confirm('Estás seguro de que quieres borrar este equipo?')">🗑️</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

@@ -8,9 +8,10 @@
 </head>
 <body>
 <nav class="menu">
-    <a href="admin_inicio.html" class="activo">Inicio</a>
+    <a href="admin_inicio.php" class="activo">Inicio</a>
     <a href="admin_equipos.html">Administrar equipos</a>
-    <a href="administrar_personal.html">Administrar Personal</a>
+    <a href="admin_tecnico.html">Administrar Personal</a>
+    <a href="solicitudes.html">Solicitudes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
 
