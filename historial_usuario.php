@@ -7,6 +7,15 @@
       <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
+
+
+<nav class="menu">
+    <a href="usuario_inicio.php">Inicio</a>
+    <a href="solicitud_usuario.php">Realizar solicitud</a>
+    <a href="ver_equipos_usuario.php">Ver equipos disponibles</a>
+    <a href="historial_usuario.php" class="activo"  >Historial de reportes</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
 <div>
   <table>
     <thead>
@@ -14,7 +23,7 @@
       <th>Nombre</th>
       <th>Correo</th>
       <th>Descripcion</th>
-      <th>Detalle</th>
+      <th>Estado</th>
 
     </tr>
     </thead>
@@ -24,15 +33,14 @@
       <td>Tadeo</td>
       <td>tadeo@gmail.com</td>
       <td>Mi compu no sirve</td>
-        <td class='opciones'>
-            <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
+        <td>En espera</td>
 
     </tr>
 
     </tbody>
   </table>
 </div>
-<a class="botones-usuario" href="usuario_inicio.php">  Regresar </a>
+
     
 </body>
 </html>

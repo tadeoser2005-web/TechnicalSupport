@@ -13,6 +13,7 @@
     <a href="usuario_inicio.php" >Inicio</a>
     <a href="solicitud_usuario.php" class="activo">Realizar solicitud</a>
     <a href="ver_equipos_usuario.php">Ver equipos disponibles</a>
+        <a href="historial_usuario.php" >Historial de reportes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
 
@@ -20,11 +21,11 @@
 
   <form class="formulario" id="formSolicitud" action="guardar_solicitud.php" method="POST">
 <h1>Detalle de Solicitud</h1>
-        <input type="text" name="Nombre" placeholder="Nombre" aria-label="Nombre" required>
-        <input type="email" name="Correo" placeholder="Correo" aria-label="Correo" required>
-        <input type="equipo" name="Equipo" placeholder="Equipo" aria-label="Descripcion" required>
-        <input type="text" name="Descripcion" placeholder="Descripcion" aria-label="Descripcion" required>
-        <input type="text" name="Comentario" placeholder="Agregar comentario" aria-label="comentario">
+        <input type="text" name="nombre" placeholder="Nombre" aria-label="nombre" required>
+        <input type="email" name="correo" placeholder="Correo" aria-label="correo" required>
+        <input type="equipo" name="equipo" placeholder="Equipo" aria-label="equipo" required>
+        <input type="text" name="descripcion" placeholder="Descripcion" aria-label="descripcion" required>
+        <input type="text" name="comentario" placeholder="Agregar comentario" aria-label="comentario">
         <label for="estado">Estado:</label>
         <label name="estado" id="estado"></label>
             <select id="estado" disabled>

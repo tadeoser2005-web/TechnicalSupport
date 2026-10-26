@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $password = "";
-$baseDatos = "SistemaReportes";
+$baseDatos = "sistemaReportes";
 
 $conexion = new mysqli($servidor,$usuario,$password,$baseDatos);
 if($conexion-> connect_error){

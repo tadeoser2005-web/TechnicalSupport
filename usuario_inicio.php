@@ -14,6 +14,7 @@
     <a href="usuario_inicio.php" class="activo">Inicio</a>
     <a href="solicitud_usuario.php">Realizar solicitud</a>
     <a href="ver_equipos_usuario.php">Ver equipos disponibles</a>
+    <a href="historial_usuario.php">Historial de reportes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
 
