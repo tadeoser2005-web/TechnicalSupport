@@ -9,9 +9,9 @@
 <body>
 <nav class="menu">
     <a href="admin_inicio.php">Inicio</a>
-    <a href="admin_equipos.html" class="activo">Administrar equipos</a>
-    <a href="admin_tecnico.html">Administrar Personal</a>
-    <a href="solicitudes.html">Solicitudes</a>
+    <a href="admin_equipos.php" class="activo">Administrar equipos</a>
+    <a href="admin_tecnico.php">Administrar Personal</a>
+    <a href="solicitudes.php">Solicitudes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
 
@@ -21,7 +21,7 @@
         <h1>Administrar Equipos</h1>
         <input type="text" name="marca" placeholder="Marca" aria-label="Marca" required>
         <input type="text" name="modelo" placeholder="Modelo" aria-label="Modelo" required>
-        <div class="botones"><a  href="ver_eqipos.html" class="boton">Editar equipos</a></div>
+        <div class="botones"><a href="ver_eqipos.php" class="boton">Editar equipos</a></div>
     </form>
 
     <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>

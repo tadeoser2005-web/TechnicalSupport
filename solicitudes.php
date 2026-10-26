@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Equipos Registrados</title>
+  <title>Solicitudes</title>
   <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
 <nav class="menu">
   <a href="admin_inicio.php">Inicio</a>
-  <a href="admin_equipos.html" >Administrar equipos</a>
-  <a href="admin_tecnico.html">Administrar Personal</a>
-  <a href="solicitudes.html" class="activo">Solicitudes</a>
+  <a href="admin_equipos.php" >Administrar equipos</a>
+  <a href="admin_tecnico.php">Administrar Personal</a>
+  <a href="solicitudes.php" class="activo">Solicitudes</a>
   <a href="index.php">Cerrar Sesion</a>
 </nav>
 
@@ -33,7 +33,7 @@
       <td>tadeo@gmail.com</td>
       <td>Mi compu no sirve</td>
         <td class='opciones'>
-            <a href='detalle_solicitud.html' title='Detalle'>🔍</a>
+            <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
 
     </tr>
     <tr>
@@ -41,7 +41,7 @@
       <td>glen@gmail.com</td>
       <td>Mi compu no sirve</td>
       <td class='opciones'>
-        <a href='detalle_solicitud.html' title='Detalle'>🔍</a>
+        <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
     </tr>
     </tbody>
   </table>

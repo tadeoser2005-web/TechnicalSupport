@@ -24,7 +24,7 @@
             <option>Pendiente</option>
         </select>
     <button type="submit">Registrar solicitud</button>
-    <a class="botones-usuario" href="usuario_inicio.html">  Regresar </a>
+    <a class="botones-usuario" href="usuario_inicio.php">  Regresar </a>
   </form>
 </body>
 

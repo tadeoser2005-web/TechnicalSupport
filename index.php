@@ -10,7 +10,7 @@
 <div class="portada">
     <h1> Soporte Tecnico</h1>
     <a class="oval" href="admin_inicio.php">Admin</a>
-    <a class="oval" href="usuario_inicio.html">Usuario</a>
+    <a class="oval" href="usuario_inicio.php">Usuario</a>
 </div>
 </body>
 </html>

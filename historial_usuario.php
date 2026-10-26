@@ -25,14 +25,14 @@
       <td>tadeo@gmail.com</td>
       <td>Mi compu no sirve</td>
         <td class='opciones'>
-            <a href='detalle_solicitud.html' title='Detalle'>🔍</a>
+            <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
 
     </tr>
 
     </tbody>
   </table>
 </div>
-<a class="botones-usuario" href="usuario_inicio.html">  Regresar </a>
+<a class="botones-usuario" href="usuario_inicio.php">  Regresar </a>
     
 </body>
 </html>

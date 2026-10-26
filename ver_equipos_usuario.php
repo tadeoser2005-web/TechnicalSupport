@@ -30,7 +30,7 @@
         </tbody>
     </table>
 
-<a class="botones-usuario" href="usuario_inicio.html"> Regresar </a>
+<a class="botones-usuario" href="usuario_inicio.php"> Regresar </a>
 </div>
 </body>
 </html>

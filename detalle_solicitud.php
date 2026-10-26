@@ -9,9 +9,9 @@
 <body>
 <nav class="menu">
     <a href="admin_inicio.php">Inicio</a>
-    <a href="admin_equipos.html" >Administrar equipos</a>
-    <a href="admin_tecnico.html" >Administrar Personal</a>
-    <a href="solicitudes.html" class="activo">Solicitudes</a>
+    <a href="admin_equipos.php" >Administrar equipos</a>
+    <a href="admin_tecnico.php" >Administrar Personal</a>
+    <a href="solicitudes.php" class="activo">Solicitudes</a>
     <a href="index.php">Cerrar Sesion</a>
 </nav>
 
@@ -29,7 +29,7 @@
             <option value="en_progreso" >En Progreso</option>
             <option value="resuelto" >Resuelto</option>
         </select>
-        <button type="submit" onclick="window.location.href='solicitudes.html'">Actualizar solicitud</button>
+        <button type="submit" onclick="window.location.href='solicitudes.php'">Actualizar solicitud</button>
     </form>
 
     <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>
