@@ -9,6 +9,13 @@
 
 <body>
 
+  <nav class="menu">
+    <a href="usuario_inicio.php" >Inicio</a>
+    <a href="solicitud_usuario.php" class="activo">Realizar solicitud</a>
+    <a href="ver_equipos_usuario.php">Ver equipos disponibles</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
+
 <main class="dos-columnas">
 
   <form class="formulario" id="formSolicitud" action="guardar_solicitud.php" method="POST">
@@ -24,7 +31,7 @@
             <option>Pendiente</option>
         </select>
     <button type="submit">Registrar solicitud</button>
-    <a class="botones-usuario" href="usuario_inicio.php">  Regresar </a>
+
   </form>
 </body>
 

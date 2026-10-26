@@ -8,6 +8,14 @@
 </head>
 <body>
 
+  <nav class="menu">
+    <a href="usuario_inicio.php" >Inicio</a>
+    <a href="solicitud_usuario.php" >Realizar solicitud</a>
+    <a href="ver_equipos_usuario.php" class="activo">Ver equipos disponibles</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
+
+
 
 <div>
     <table>
@@ -30,7 +38,6 @@
         </tbody>
     </table>
 
-<a class="botones-usuario" href="usuario_inicio.php"> Regresar </a>
 </div>
 </body>
 </html>

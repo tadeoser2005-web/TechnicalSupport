@@ -8,10 +8,22 @@
 </head>
 <body>
 
-<a class="botones-usuario" href="solicitud_usuario.php"> Realizar solicitud </a>
-<a class="botones-usuario" href="historial_usuario.php"> Historial de solicitudes </a>
-<a class="botones-usuario" href="ver_equipos_usuario.php"> Ver equipos disponibles </a>
-<a class="botones-usuario" href="index.php"> Salir </a>
+
+
+<nav class="menu">
+    <a href="usuario_inicio.php" class="activo">Inicio</a>
+    <a href="solicitud_usuario.php">Realizar solicitud</a>
+    <a href="ver_equipos_usuario.php">Ver equipos disponibles</a>
+    <a href="index.php">Cerrar Sesion</a>
+</nav>
+
+<main class="bienvenida">
+
+    <h1>Bienvendido, Usuario</h1>
+    <div class="imagen">
+     <img src="Assets/cardenal.png" alt="Imagen 2" width="600" height="580">
+    </div>
+</main>
 
 
     
