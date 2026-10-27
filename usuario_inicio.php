@@ -22,7 +22,7 @@
 
     <h1>Bienvendido, Usuario</h1>
     <div class="imagen">
-     <img src="Assets/cardenal.png" alt="Imagen 2" width="600" height="580">
+     <img  class="imagen" src="Assets/cardenal.png" alt="Imagen 2" width="600" height="580">
     </div>
 </main>
 

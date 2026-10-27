@@ -1,3 +1,8 @@
+<?php
+include 'conexion.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,30 +24,29 @@
   <table>
     <thead>
     <tr>
+      <th>#</th>
       <th>Nombre</th>
       <th>Correo</th>
-      <th>Descripcion</th>
-      <th>Detalle</th>
+      <th>Equipo</th>
+        <th>Descripcion</th>
+        <th>Comentarios</th>
+        <th>Estado</th>
 
     </tr>
     </thead>
     <tbody>
     <!-- Filas de datos de equipos -->
-    <tr>
-      <td>Tadeo</td>
-      <td>tadeo@gmail.com</td>
-      <td>Mi compu no sirve</td>
-        <td class='opciones'>
-            <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
-
-    </tr>
-    <tr>
-      <td>Glenda</td>
-      <td>glen@gmail.com</td>
-      <td>Mi compu no sirve</td>
-      <td class='opciones'>
-        <a href='detalle_solicitud.php' title='Detalle'>🔍</a>
-    </tr>
+    <?php
+    $resultado = mysqli_query($conexion, "SELECT * FROM solicitud");
+    while ($row = mysqli_fetch_assoc($resultado)) {
+        echo "<tr>";
+        echo "<td>" . $row['id_equipo'] . "</td>";
+        echo "<td>" . $row['marca'] . "</td>";
+        echo "<td>" . $row['modelo'] . "</td>";
+        echo "</td>";
+    }
+    ?>
+    ?>
     </tbody>
   </table>
 </div>

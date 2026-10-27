@@ -1,3 +1,31 @@
+<?php
+include 'conexion.php';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $query = "SELECT *FROM Equipo WHERE id_equipo = $id";
+    $resultado = mysqli_query($conexion, $query);
+    $equipo = mysqli_fetch_assoc($resultado);
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $id_equipo = $_POST['id_equipo'];
+    $marca = $_POST['marca'];
+    $modelo = $_POST['modelo'];
+
+
+
+    $sql_update = "UPDATE equipo SET marca = '$marca',modelo = '$modelo'WHERE id_equipo = $id_equipo";
+
+    if (mysqli_query($conexion, $sql_update)) {
+
+        header("Location: ver_eqipos.php");
+        exit();
+    } else {
+        $error = "Error al actualizar: " . mysqli_error($conexion);
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +45,12 @@
 
 <main class="dos-columnas">
 
-    <form class="formulario" action="#" method="post">
+    <form class="formulario" action="" method="post">
         <h1>Administrar Equipos</h1>
-        <input type="text" name="marca" placeholder="Marca" aria-label="Marca" required>
-        <input type="text" name="modelo" placeholder="Modelo" aria-label="Modelo" required>
-        <div class="botones"><a href="ver_eqipos.php" class="boton">Editar equipos</a></div>
+        <input type="hidden" name="id_equipo" value="<?php echo $equipo['id_equipo'];?>">
+        <input type="text" name="marca" value="<?php echo htmlspecialchars($equipo['marca'])?>" aria-label="Marca" required>
+        <input type="text" name="modelo" value="<?php echo htmlspecialchars($equipo['modelo'])?>" aria-label="Modelo" required>
+        <button class="botones" type="submit">Actualizar Equipos</button>
     </form>
 
     <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>

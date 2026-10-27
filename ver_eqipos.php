@@ -40,7 +40,7 @@ include 'conexion.php';
                 echo "<td>" . $row['modelo'] . "</td>";
                 echo "<td class='opciones'>";
                 echo "<a href='editar_equipos.php?id=" . $row['id_equipo'] . "' title='Editar'>✏️</a> ";
-                echo "<a href='ver_eqipos.php?id=" . $row['id_equipo'] . "' title='Borrar' onclick=\"return confirm('¿Estás seguro de que quieres borrar este equipo?')\">🗑️</a>";
+                echo "<a href='eliminar_equipo.php?id=" . $row['id_equipo'] . "' title='Borrar' onclick=\"return confirm('¿Estás seguro de que quieres borrar este equipo?')\">🗑️</a>";
                 echo "</td>";
             }
             ?>
