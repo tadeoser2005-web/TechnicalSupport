@@ -28,7 +28,7 @@ include 'conexion.php';
             <tr>
                 <th>#</th>
                 <th>Marca</th>
-                <th>Modelo</th>
+              <!--  <th>Modelo</th>-->
               
             </tr>
         </thead>
@@ -40,7 +40,7 @@ include 'conexion.php';
                 echo "<tr>";
                 echo "<td>" . $row['id_equipo'] . "</td>";
                 echo "<td>" . $row['marca'] . "</td>";
-                echo "<td>" . $row['modelo'] . "</td>";
+               /* echo "<td>" . $row['modelo'] . "</td>";*/
                 echo "</td>";
             }
             ?>

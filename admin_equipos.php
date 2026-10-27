@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <form class="formulario" action="admin_equipos.php" method="post">
     <h1>Administrar Equipos</h1>
     <input type="text" name="marca" placeholder="Marca" aria-label="Marca" required>
-    <input type="text" name="modelo" placeholder="Modelo" aria-label="Modelo" required>
+   <!-- <input type="text" name="modelo" placeholder="Modelo" aria-label="Modelo" required>-->
     <button type="submit">Registrar equipo</button>
     <button type="button" onclick="window.location.href='ver_eqipos.php'">Ver equipos</button>
   </form>

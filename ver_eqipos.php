@@ -25,7 +25,7 @@ include 'conexion.php';
             <tr>
                 <th>#</th>
                 <th>Marca</th>
-                <th>Modelo</th>
+               <!-- <th>Modelo</th>-->
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -37,7 +37,7 @@ include 'conexion.php';
                 echo "<tr>";
                 echo "<td>" . $row['id_equipo'] . "</td>";
                 echo "<td>" . $row['marca'] . "</td>";
-                echo "<td>" . $row['modelo'] . "</td>";
+                /*echo "<td>" . $row['modelo'] . "</td>";*/
                 echo "<td class='opciones'>";
                 echo "<a href='editar_equipos.php?id=" . $row['id_equipo'] . "' title='Editar'>✏️</a> ";
                 echo "<a href='eliminar_equipo.php?id=" . $row['id_equipo'] . "' title='Borrar' onclick=\"return confirm('¿Estás seguro de que quieres borrar este equipo?')\">🗑️</a>";
