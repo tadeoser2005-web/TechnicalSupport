@@ -28,7 +28,7 @@
         <input type="text" name="equipo" placeholder="Equipo (Ej. HP, Dell, Macbook)" aria-label="equipo" required>
 
         <input type="text" name="descripcion" placeholder="Descripcion" aria-label="descripcion" required>
-        <input type="text" name="comentario" placeholder="Agregar comentario" aria-label="comentario">
+        <!--<input type="text" name="comentario" placeholder="Agregar comentario" aria-label="comentario">-->
 
         <label for="estado">Estado:</label>
         <select id="estado" disabled>

@@ -1,5 +1,4 @@
 <?php
-
 include 'conexion.php';
 ?>
 
@@ -22,7 +21,7 @@ include 'conexion.php';
     <table>
         <thead>
         <tr>
-            <th>ID</th>
+            <th>#</th>
             <th>Nombre</th>
             <th>Correo</th>
             <th>Equipo</th>
