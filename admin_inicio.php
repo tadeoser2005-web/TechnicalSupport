@@ -19,7 +19,7 @@
 
     <h1>Bienvendido, Administrador</h1>
     <div class="imagen">
-     <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="600" height="580">
+     <img src="Assets/cardenalDer.png" alt="Imagen 2" width="600" height="580">
     </div>
 </main>
 

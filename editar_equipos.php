@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <button class="botones" type="submit">Actualizar Equipos</button>
     </form>
 
-    <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>
+    <div class="imagen2">  <img src="Assets/cardenalDer.png" alt="Imagen 2" width="500" height="580"></div>
 </main>
 
 

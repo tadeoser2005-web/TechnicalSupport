@@ -32,7 +32,7 @@
         <button type="submit" onclick="window.location.href='solicitudes.php'">Actualizar solicitud</button>
     </form>
 
-    <div class="imagen2">  <img src="Assets/cardenalDer.jpg" alt="Imagen 2" width="500" height="580"></div>
+    <div class="imagen2">  <img src="Assets/cardenalDer.png" alt="Imagen 2" width="500" height="580"></div>
 </main>
 
 
