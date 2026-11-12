@@ -1,10 +1,16 @@
 <?php
 include 'conexion.php';
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+
+//isset es una medida de seguridad para ver q exista la variable
+if (isset($_GET['id'])) { //este id hace referencia a lo q pusimos en el icono y lo mandamos traer con el GET
+    $id = $_GET['id']; //Y lo q trajo lo guardamos en la variable id
     $query = "SELECT *FROM Equipo WHERE id_equipo = $id";
+    //hacemos el select con el id q trajimos del icono y buscamos en el campo id_equipo de la bd el q coincida
+
+    //guardamos lo q trajo de la consulta en resultado
     $resultado = mysqli_query($conexion, $query);
     $equipo = mysqli_fetch_assoc($resultado);
+    //lo convierte en un arreglo asosiativo
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -47,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <form class="formulario" action="" method="post">
         <h1>Administrar Equipos</h1>
+        <!--lo de dentor de equipo son campos de la bd-->
         <input type="hidden" name="id_equipo" value="<?php echo $equipo['id_equipo'];?>">
         <input type="text" name="marca" value="<?php echo htmlspecialchars($equipo['marca'])?>" aria-label="Marca" required>
         <input type="text" name="modelo" value="<?php echo htmlspecialchars($equipo['modelo'])?>" aria-label="Modelo" required>
