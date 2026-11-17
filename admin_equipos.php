@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <a href="index.php">Cerrar Sesion</a>
 </nav>
 
+
 <main class="dos-columnas">
 
   <form class="formulario" action="admin_equipos.php" method="post">
