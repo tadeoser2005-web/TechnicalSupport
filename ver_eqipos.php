@@ -31,9 +31,20 @@ include 'conexion.php';
         </thead>
         <tbody>
             <!-- Filas de datos de equipos -->
-            <?php
+            <?php //aqui incrustaremos el codigo php
+
+            //resultado es la variable q guarda la consulta
+            //en el select traemos todos los datos de los equipos
+
             $resultado = mysqli_query($conexion, "SELECT * FROM Equipo");
+
+            //mysqli_fetch_assoc es la funcion q trae los valores
+            //le decimos q traiga los valores con la consulta q esta en resultado, y eso lo guarde en la variable row
+
             while ($row = mysqli_fetch_assoc($resultado)) {
+
+                //creo q lo de dentro del row hace referencia a el campo en la bd
+
                 echo "<tr>";
                 echo "<td>" . $row['id_equipo'] . "</td>";
                 echo "<td>" . $row['marca'] . "</td>";

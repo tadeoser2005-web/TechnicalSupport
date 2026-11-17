@@ -35,16 +35,16 @@ include 'conexion.php';
         <?php
 
         $sql = "SELECT s.id_solicitud, 
-                               u.nombre AS nombre, 
-                               u.correo AS correo, 
-                               e.marca, 
-                               e.modelo, 
-                               s.descripcion, 
-                               s.observacion, 
-                               s.estado 
-                        FROM solicitud s
-                        LEFT JOIN usuario u ON s.id_usuario = u.id_usuario
-                        LEFT JOIN equipo e ON s.id_equipo = e.id_equipo";
+            u.nombre AS nombre, 
+            u.correo AS correo, 
+            e.marca, 
+            e.modelo, 
+            s.descripcion, 
+            s.observacion, 
+            s.estado 
+            FROM solicitud s
+            LEFT JOIN usuario u ON s.id_usuario = u.id_usuario
+            LEFT JOIN equipo e ON s.id_equipo = e.id_equipo";
 
         $resultado = mysqli_query($conexion, $sql);
 
