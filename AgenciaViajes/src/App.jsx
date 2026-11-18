@@ -18,6 +18,16 @@ return (
       <div>
           <Encabezado/>
       </div>
+      <div className='buscar'>
+      <strong>Explorar destinos</strong>
+          <input
+                type='text'
+                name='buscador'
+                id='buscador'
+                placeholder='Buscar destino turistico...'
+          />
+          <button>Mostrar favoritos</button>
+      </div>
     <div>
     {tarjetas.map((t)=> (
       <Tarjetas

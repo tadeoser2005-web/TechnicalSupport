@@ -1,15 +1,23 @@
 .navegacion {
   display: flex;
   flex-direction: row;
-  background-color: #185FA5;
+  background-color: #131C2E;
   color: white;
-  gap: 800px;
-  width: 100%;
+  gap: 750px;
   padding: 16px;
-  border-radius: 30px;
 }
 
+.imagenTitulo {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
 
+.navegacion img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
 
 .navegacion strong {
   display: flex;
@@ -27,4 +35,53 @@
 
 .encabezado {
   background-color: darkcyan;
+  border-radius: 10px;
+  align-items: center;
+  text-align: start;
+  width: 1050px;
+  padding: 10px;
+  margin: 20px;
+  gap: 0;
+}
+.encabezado h1 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.encabezado p {
+  margin-top: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buscar {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 14px;
+  justify-content: start;
+  align-items: start;
+}
+
+.buscar strong {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.buscar input {
+  border-radius: 4px;
+  width: 100%;
+  border: white;
+  height: 30px;
+  margin-left: 12px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+
+.buscar button {
+  background-color: darkcyan;
+  border-radius: 8px;
+  height: 30px;
+  margin-left: 12px;
+  font-weight: bold;
 }
