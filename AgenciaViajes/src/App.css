@@ -140,3 +140,24 @@
 
 }
 
+.Destinos_favoritos{
+  background-color: rgb(226, 240, 240);
+  border-radius: 10px;
+  width: 1050px;
+  padding: 10px;
+  margin: 20px;
+  gap: 0;
+  text-align: left;
+}
+
+.titulofavoritos{
+    font-weight: bold;
+    padding: 1%;
+}
+
+.contador{
+  color: red;
+  font-weight: bold;
+  text-align: right;
+}
+

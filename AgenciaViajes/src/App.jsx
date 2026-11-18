@@ -5,13 +5,14 @@ import Encabezado from "./componentes/Encabezado.jsx";
 import cancun from "./assets/cancun.jpg";
 import inglaterra from "./assets/inglaterra.jpg";
 import japon from "./assets/Japon.jpg";
+import ContadorFavoritos from './componentes/ContadorFavoritos.jsx';
 
 export default function App() {
 
 const tarjetas = [
   {id: 1, imagen: cancun, categoria: "Playa", nombre: "Cancún", ubicacion: "📍México", precio: " Desde: $400 MXN"},
-  {id: 2, imagen: inglaterra, categoria: "Cultura", nombre: "Sakura", ubicacion: "📍Japon", precio: "Desde: $6000 MXN"},
-  {id: 3, imagen: japon, categoria: "Cultura", nombre: "Londres", ubicacion: "📍Inglaterra", precio: "Desde: $9000 MXN"},
+  {id: 2, imagen: japon, categoria: "Cultura", nombre: "Sakura", ubicacion: "📍Japon", precio: "Desde: $6000 MXN"},
+  {id: 3, imagen: inglaterra, categoria: "Cultura", nombre: "Londres", ubicacion: "📍Inglaterra", precio: "Desde: $9000 MXN"},
 ]
 
 return (
@@ -19,6 +20,7 @@ return (
     <BarraNavegacion/>
       <div>
           <Encabezado/>
+          <ContadorFavoritos/>
       </div>
       <div className='buscar'>
       <strong>Explorar destinos</strong>
