@@ -1,13 +1,26 @@
 .navegacion {
-  flex: auto;
+  display: flex;
   flex-direction: row;
   background-color: #185FA5;
   color: white;
-  gap: 8px;
+  gap: 800px;
   width: 100%;
   padding: 16px;
+  border-radius: 30px;
 }
 
-.navegacion p {
+
+
+.navegacion strong {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.opciones {
   font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
 }
