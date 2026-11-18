@@ -1,6 +1,7 @@
 import './App.css'
 import BarraNavegacion from "./componentes/BarraNavegacion.jsx";
 import Tarjetas from './componentes/Tarjetas.jsx';
+import Encabezado from "./componentes/Encabezado.jsx";
 
 
 export default function App() {
@@ -12,26 +13,22 @@ const tarjetas = [
 ]
 
 return (
-  <>
+  <div>
     <BarraNavegacion/>
-    
+      <div>
+          <Encabezado/>
+      </div>
     <div>
-
     {tarjetas.map((t)=> (
-
       <Tarjetas
       key={t.id}
       nombre={t.nombre}
       ubicacion={t.ubicacion}
       precio={t.precio}
       />
-
     ))}
-
     </div>
-
-
-    </>
+    </div>
 
 )
 }
